@@ -991,12 +991,12 @@ function doChangePassword(){
 
 // ===== GOOGLE SIGN-IN =====
 // 🔧 SETUP: Replace with your Google Client ID from console.cloud.google.com
-const GOOGLE_CLIENT_ID = 'YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com';
+const GOOGLE_CLIENT_ID = '62087961692-h8l3k3i6s57eeohfvprgdbhqg1dl2ket.apps.googleusercontent.com';
 
 // Initialize Google Identity Services once the library loads
 window.addEventListener('load', () => {
   if(typeof google === 'undefined' || !google.accounts) return;
-  if(GOOGLE_CLIENT_ID === 'YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com') return; // not configured yet
+  if(GOOGLE_CLIENT_ID === '62087961692-h8l3k3i6s57eeohfvprgdbhqg1dl2ket.apps.googleusercontent.com') return; // not configured yet
 
   google.accounts.id.initialize({
     client_id: GOOGLE_CLIENT_ID,
@@ -1054,7 +1054,7 @@ function handleGoogleCredential(response) {
 // Trigger Google sign-in popup
 function doGoogleSignIn() {
   // Not yet configured
-  if (GOOGLE_CLIENT_ID === 'YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com') {
+  if (GOOGLE_CLIENT_ID === '62087961692-h8l3k3i6s57eeohfvprgdbhqg1dl2ket.apps.googleusercontent.com') {
     showToast('Google Sign-In is not yet configured.', 'red');
     setTimeout(() => showToast('I-replace ang GOOGLE_CLIENT_ID sa code.'), 2600);
     return;
