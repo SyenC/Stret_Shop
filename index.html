@@ -999,7 +999,7 @@ window.addEventListener('load', () => {
   if(GOOGLE_CLIENT_ID === '62087961692-h8l3k3i6s57eeohfvprgdbhqg1dl2ket.apps.googleusercontent.com') return; // not configured yet
 
   google.accounts.id.initialize({
-    client_id: GOOGLE_CLIENT_ID,
+    client_id: 62087961692-h8l3k3i6s57eeohfvprgdbhqg1dl2ket.apps.googleusercontent.com,
     callback: handleGoogleCredential,
     auto_select: false,
     cancel_on_tap_outside: true,
@@ -1056,7 +1056,7 @@ function doGoogleSignIn() {
   // Not yet configured
   if (GOOGLE_CLIENT_ID === '62087961692-h8l3k3i6s57eeohfvprgdbhqg1dl2ket.apps.googleusercontent.com') {
     showToast('Google Sign-In is not yet configured.', 'red');
-    setTimeout(() => showToast('I-replace ang GOOGLE_CLIENT_ID sa code.'), 2600);
+    setTimeout(() => showToast('62087961692-h8l3k3i6s57eeohfvprgdbhqg1dl2ket.apps.googleusercontent.com'), 2600);
     return;
   }
 
@@ -1070,7 +1070,7 @@ function doGoogleSignIn() {
     if (notification.isNotDisplayed() || notification.isSkippedMoment()) {
       // Fallback: open account chooser popup
       google.accounts.oauth2.initCodeClient({
-        client_id: GOOGLE_CLIENT_ID,
+        client_id: 62087961692-h8l3k3i6s57eeohfvprgdbhqg1dl2ket.apps.googleusercontent.com,
         scope: 'email profile',
         callback: () => {}, // not needed, credential callback handles it
       });
